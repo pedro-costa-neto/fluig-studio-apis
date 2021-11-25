@@ -2,7 +2,9 @@
 ### Dataset
 #### Listar todos os datasets
 **GET {host}/ecm/api/rest/ecm/dataset/getFullDatasets**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome     | Tipo        | Descrição |
 | -------- | ----------- | --------- |
 | username | QueryString | Usuário   |
@@ -11,7 +13,9 @@ Parâmetros de solicitação
 ------
 #### Listar datasets
 **GET {host}/ecm/api/rest/ecm/dataset/getDatasets**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome     | Tipo        | Descrição |
 | -------- | ----------- | --------- |
 | username | QueryString | Usuário   |
@@ -20,7 +24,9 @@ Parâmetros de solicitação
 ------
 #### Listar registros do dataset
 **GET {host}/ecm/api/rest/ecm/dataset/loadDataset**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome      | Tipo        | Descrição         |
 | --------- | ----------- | ----------------- |
 | username  | QueryString | Usuário           |
@@ -30,13 +36,16 @@ Parâmetros de solicitação
 ------
 #### Criar dataset
 **POST {host}/ecm/api/rest/ecm/dataset/createDataset**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome     | Tipo        | Descrição |
 | -------- | ----------- | --------- |
 | username | QueryString | Usuário   |
 | password | QueryString | Senha     |
 
-Corpo de Solicitação
+Corpo da Solicitação
+
 | Tipo de midia | Tipo de dados | Descrição |
 | -------- | ----------- | ------------------------------------------------------------ |
 | application/json | JSON        | {<br/>	"datasetPK": {<br/>		"companyId": number,<br/>		"datasetId": string<br/>	},<br/>	"datasetDescription": string,<br/>	"datasetImpl": string,<br/>	"datasetBuilder": string,<br/>	"serverOffline": boolean,<br/>	"mobileCache": boolean,<br/>	"lastReset": number,<br/>	"lastRemoteSync": number,<br/>	"type": string,<br/>	"mobileOffline": boolean,<br/>	"updateIntervalTimestamp": number<br/>} |
@@ -44,14 +53,17 @@ Corpo de Solicitação
 ------
 #### Atualizar dataset
 **POST {host}/ecm/api/rest/ecm/dataset/editDataset**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome                | Tipo        | Descrição                                                 |
 | ------------------- | ----------- | --------------------------------------------------------- |
 | username            | QueryString | Usuário                                                   |
 | password            | QueryString | Senha                                                     |
 | confirmnewstructure | QueryString | Confirmar se é estrutura nova, informar "true" ou "false" |
 
-Corpo de Solicitação
+Corpo da Solicitação
+
 | Tipo de midia | Tipo de dados | Descrição |
 | -------- | ----------- | ------------------------------------------------------------ |
 | application/json | JSON        | {<br/>	"datasetPK": {<br/>		"companyId": number,<br/>		"datasetId": string<br/>	},<br/>	"datasetDescription": string,<br/>	"datasetImpl": string,<br/>	"datasetBuilder": string,<br/>	"serverOffline": boolean,<br/>	"mobileCache": boolean,<br/>	"lastReset": number,<br/>	"lastRemoteSync": number,<br/>	"type": string,<br/>	"mobileOffline": boolean,<br/>	"updateIntervalTimestamp": number<br/>} |
@@ -59,7 +71,9 @@ Corpo de Solicitação
 ------
 #### Excluir  dataset
 **POST {host}/ecm/api/rest/ecm/dataset/deleteDataset**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome      | Tipo        | Descrição         |
 | --------- | ----------- | ----------------- |
 | username  | QueryString | Usuário           |
@@ -70,7 +84,8 @@ Parâmetros de solicitação
 ### Colleague
 #### Consultar colleague
 **GET {host}/ecm/api/rest/ecm/zoom/valuesByPlugin/foundation.business.ColleagueBI**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
 
 | Nome          | Tipo        | Descrição                                                    |
 | ------------- | ----------- | ------------------------------------------------------------ |
@@ -87,7 +102,8 @@ Parâmetros de solicitação
 ------
 #### Verificar documentos privados
 **GET {host}/ecm/api/rest/ecm/colleague/checkPrivateDocuments**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
 
 | Nome     | Tipo        | Descrição |
 | -------- | ----------- | --------- |
@@ -99,7 +115,7 @@ Parâmetros de solicitação
 #### Encontrar usuário por login
 **GET {host}/portal/api/rest/wcmservice/rest/user/findUserByLogin**
 
-Parâmetros de solicitação
+Parâmetros da solicitação
 
 | Nome     | Tipo        | Descrição |
 | -------- | ----------- | --------- |
@@ -111,7 +127,9 @@ Parâmetros de solicitação
 ### Eventos globais
 #### Listar eventos
 **GET {host}/ecm/api/rest/ecm/globalevent/getEventList**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome          | Tipo        | Descrição |
 | ------------- | ----------- | --------- |
 | username      | QueryString | Usuário   |
@@ -121,7 +139,8 @@ Parâmetros de solicitação
 #### Listar eventos
 **GET {host}/ecm/api/rest/ecm/globalevent/getEventList**
 
-Parâmetros de solicitação
+Parâmetros da solicitação
+
 | Nome          | Tipo        | Descrição |
 | ------------- | ----------- | --------- |
 | username      | QueryString | Usuário   |
@@ -131,13 +150,15 @@ Parâmetros de solicitação
 #### Salvar evento
 **POST {host}/ecm/api/rest/ecm/globalevent/saveEventList**
 
-Parâmetros de solicitação
+Parâmetros da solicitação
+
 | Nome          | Tipo        | Descrição |
 | ------------- | ----------- | --------- |
 | username      | QueryString | Usuário   |
 | password      | QueryString | Senha     |
 
-Corpo de Solicitação
+Corpo da Solicitação
+
 | Tipo de midia | Tipo de dados | Descrição |
 | -------- | ----------- | ------------------------------------------------------------ |
 | application/json | JSON    | [<br/>	{<br/>		"globalEventPK": {<br/>			"companyId": number,<br/>			"eventId": string<br/>		},<br/>		"eventDescription": string<br/>	}<br/>] |
@@ -146,7 +167,9 @@ Corpo de Solicitação
 ### Formulário
 #### Obter os campos principais
 **GET /ecm/api/rest/ecm/cardIndexPublisher/getFormPrincipalFields/{documentId}**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome       | Tipo        | Descrição                   |
 | ---------- | ----------- | --------------------------- |
 | documentId | Path        | Código do formulário no ECM |
@@ -157,7 +180,9 @@ Parâmetros de solicitação
 ### Serviços
 #### Listar
 **GET /ecm/api/rest/ecm/ecmservices/getServices**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome       | Tipo        | Descrição                   |
 | ---------- | ----------- | --------------------------- |
 | username   | QueryString | Usuário                     |
@@ -167,7 +192,9 @@ Parâmetros de solicitação
 ### Mecanismo de atribuição
 #### Listar mecanismos customizados
 **GET /ecm/api/rest/ecm/mechanism/getCustomAttributionMechanismList**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome       | Tipo        | Descrição                   |
 | ---------- | ----------- | --------------------------- |
 | username   | QueryString | Usuário                     |
@@ -177,7 +204,9 @@ Parâmetros de solicitação
 ### Validar versão
 #### Obter a versão do Fluig
 **GET /ecm/api/rest/ecm/studioWorkflowRest/version**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome       | Tipo        | Descrição                   |
 | ---------- | ----------- | --------------------------- |
 | username   | QueryString | Usuário                     |
@@ -186,7 +215,9 @@ Parâmetros de solicitação
 ------
 #### Obter compatibilidade de cliente
 **GET /ecm/api/rest/ecm/studioWorkflowRest/getClientCompatibility**
-Parâmetros de solicitação
+
+Parâmetros da solicitação
+
 | Nome       | Tipo        | Descrição                   |
 | ---------- | ----------- | --------------------------- |
 | username   | QueryString | Usuário                     |
